@@ -1,0 +1,4 @@
+fecha,hora_utc,lat,lon,sensor,satelite,confianza,frp,tipo
+2002-02-01,1456,-43.8842,-74.0418,MODIS,Terra,nominal,2.8,0
+2013-12-07,1920,-43.8453,-73.8966,VIIRS,SNPP,nominal,23.8,0
+2013-12-07,1920,-43.8415,-73.8981,VIIRS,SNPP,nominal,23.8,0

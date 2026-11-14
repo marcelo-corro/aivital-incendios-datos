@@ -1,0 +1,7 @@
+fecha,hora_utc,lat,lon,sensor,satelite,confianza,frp,tipo
+2005-12-10,1903,-33.4583,-70.5312,MODIS,Aqua,nominal,32.4,0
+2005-12-10,1903,-33.4539,-70.5174,MODIS,Aqua,alta,77.4,0
+2005-12-10,1903,-33.4545,-70.5127,MODIS,Aqua,alta,98.6,0
+2021-12-02,1837,-33.4606,-70.5542,VIIRS,NOAA20,baja,2.2,0
+2024-01-19,1800,-33.4538,-70.5162,VIIRS,SNPP,nominal,8.3,0
+2024-01-19,1854,-33.4572,-70.5071,MODIS,Aqua,nominal,18.2,0

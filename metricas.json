@@ -1,6 +1,6 @@
 {
   "contrato": "0.2",
-  "ejemplo": true,
+  "ejemplo": false,
   "modelo": null,
   "periodo_prueba": null,
   "auc": null,

@@ -1,0 +1,7 @@
+fecha,hora_utc,lat,lon,sensor,satelite,confianza,frp,tipo
+2002-01-23,1504,-52.4248,-71.4274,MODIS,Terra,nominal,23.2,0
+2002-01-23,1504,-52.4267,-71.4034,MODIS,Terra,nominal,13.8,0
+2003-07-03,0403,-52.2638,-71.6123,MODIS,Terra,nominal,12.9,0
+2018-07-18,1850,-52.0634,-71.5286,VIIRS,NOAA20,nominal,7.4,0
+2018-07-18,1941,-52.0636,-71.5315,VIIRS,SNPP,nominal,4.1,0
+2025-07-12,0519,-52.0651,-71.5347,VIIRS,SNPP,nominal,0.4,0
