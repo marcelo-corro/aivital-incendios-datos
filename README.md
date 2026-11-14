@@ -9,8 +9,13 @@ Chile, con su calendario mensual de actividad de quema. El código que los gener
 
 **URL base:** https://marcelo-corro.github.io/aivital-incendios-datos
 
-> **Estado actual: datos de ejemplo.** Los archivos tienen la forma definitiva (contrato v0.2) pero números
-> inventados (`"ejemplo": true`) y solo dos comunas. Se reemplazan por datos reales sin cambiar la URL.
+> **Estado actual: datos reales de las 345 comunas de Chile** (contrato v0.2, `"ejemplo": false`).
+> - **Serie armonizada** MODIS/VIIRS de noviembre de 2000 a diciembre de 2025, método
+>   `factor_unico_snpp_2012-2017_v1`, en focos equivalentes MODIS.
+> - **Generada el 2026-11-14** (`generado_utc` en `manifest.json`).
+> - **El riesgo es para el 2026-01-01** (a 24 h): los datos llegan hasta el 31-12-2025, así que es el último día
+>   que se puede pronosticar con ellos. No es un pronóstico en tiempo real.
+> - El modelo (`hgb_firms_v1`) se probó en 2022-2025; sus métricas están en `metricas.json`.
 
 ## Archivos
 
