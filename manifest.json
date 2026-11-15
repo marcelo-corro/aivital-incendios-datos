@@ -1,7 +1,7 @@
 {
-  "contrato": "0.3",
+  "contrato": "0.4",
   "ejemplo": false,
-  "generado_utc": "2026-11-15T00:54:25Z",
+  "generado_utc": "2026-11-15T01:35:21Z",
   "periodo": {
     "desde": "2000-11",
     "hasta": "2025-12"
@@ -405,6 +405,18 @@
       "05802",
       "05803",
       "05804"
-    ]
+    ],
+    "modelo_b": {
+      "modelo": "sectores_b_v1",
+      "fecha_prediccion": "2026-01-01",
+      "captura_top10_prueba": {
+        "modelo_b": 44.52,
+        "orden_a": 39.34,
+        "azar": 10.0
+      },
+      "auc_incendio_grande_prueba": 0.866,
+      "auc_incendio_grande_ignicion_prueba": 0.83,
+      "nota": "Prueba 2022-2025: el 10 % de sectores con mayor probabilidad de cada comuna concentró el 45 % del fuego (azar 10 %). Ordena mejor cuando ya hay fuego cerca; con fuego nuevo no supera al orden por historial. La probabilidad de incendio grande distingue bien (AUC 0.83 en fuegos nuevos)."
+    }
   }
 }
