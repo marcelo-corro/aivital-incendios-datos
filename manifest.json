@@ -1,7 +1,7 @@
 {
-  "contrato": "0.6",
+  "contrato": "0.7",
   "ejemplo": false,
-  "generado_utc": "2026-11-15T05:30:33Z",
+  "generado_utc": "2026-11-15T06:10:49Z",
   "periodo": {
     "desde": "2000-11",
     "hasta": "2025-12"
@@ -364,7 +364,8 @@
     "sectores": "sectores/{region_id}.geojson",
     "sectores_focos": "sectores/{region_id}_focos.csv",
     "alertas": "alertas/{codigo_region}.json",
-    "recomendaciones": "recomendaciones.json"
+    "recomendaciones": "recomendaciones.json",
+    "avance": "avance/activos.json"
   },
   "sectores": {
     "codigo_region": "05",

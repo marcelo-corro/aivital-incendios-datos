@@ -1,7 +1,7 @@
 {
-  "contrato": "0.6",
+  "contrato": "0.7",
   "ejemplo": false,
-  "calculado_utc": "2026-11-15T05:30:38Z",
+  "calculado_utc": "2026-11-15T06:10:54Z",
   "valido_para": "2026-11-15",
   "horizonte_horas": 24,
   "modelo": "hgb_firms_clima_v3",
