@@ -433,6 +433,6 @@
       "auc_climatologia": 0.8181,
       "precision_media": 0.3275
     },
-    "nota": "Focos satelitales hasta el 2026-11-14. Suomi NPP no tiene datos desde el 2026-11-01: los días siguientes usan NOAA-20 (mismo instrumento; en 2022-2025 el modelo rindió igual con él). El clima (NASA POWER) llega hasta el 2026-11-11: se usa ese último clima (con 3 días de rezago el modelo baja de AUC 0,85 a 0,82)."
+    "nota": "Focos satelitales hasta el 2026-11-14. Suomi NPP tiene datos solo hasta el 2026-11-01: los días siguientes usan NOAA-20 (mismo instrumento; en 2022-2025 el modelo rindió igual con él). El clima (NASA POWER) llega hasta el 2026-11-11: se usa ese último clima (con 3 días de rezago el modelo baja de AUC 0,85 a 0,82)."
   }
 }
