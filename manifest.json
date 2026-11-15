@@ -1,7 +1,7 @@
 {
-  "contrato": "0.2",
+  "contrato": "0.3",
   "ejemplo": false,
-  "generado_utc": "2026-11-14T19:20:13Z",
+  "generado_utc": "2026-11-15T00:54:25Z",
   "periodo": {
     "desde": "2000-11",
     "hasta": "2025-12"
@@ -358,6 +358,53 @@
     "calendario": "calendario/{region_id}.json",
     "riesgo": "riesgo/ultimo.json",
     "focos": "focos/{region_id}.csv",
-    "metricas": "metricas.json"
+    "metricas": "metricas.json",
+    "riesgo_48h": "riesgo/48h.json",
+    "riesgo_7d": "riesgo/7d.json",
+    "sectores": "sectores/{region_id}.geojson",
+    "sectores_focos": "sectores/{region_id}_focos.csv",
+    "alertas": "alertas/{codigo_region}.json",
+    "recomendaciones": "recomendaciones.json"
+  },
+  "sectores": {
+    "codigo_region": "05",
+    "regiones": [
+      "05101",
+      "05102",
+      "05103",
+      "05105",
+      "05107",
+      "05109",
+      "05301",
+      "05302",
+      "05303",
+      "05304",
+      "05401",
+      "05402",
+      "05403",
+      "05404",
+      "05405",
+      "05501",
+      "05502",
+      "05503",
+      "05504",
+      "05506",
+      "05601",
+      "05602",
+      "05603",
+      "05604",
+      "05605",
+      "05606",
+      "05701",
+      "05702",
+      "05703",
+      "05704",
+      "05705",
+      "05706",
+      "05801",
+      "05802",
+      "05803",
+      "05804"
+    ]
   }
 }

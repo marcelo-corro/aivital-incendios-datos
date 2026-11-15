@@ -1,10 +1,10 @@
 {
-  "contrato": "0.2",
+  "contrato": "0.3",
   "ejemplo": false,
-  "modelo": "hgb_firms_v1",
+  "modelo": "hgb_firms_clima_v3",
   "periodo_prueba": "2022-2025",
-  "auc": 0.827,
-  "precision_media": 0.253,
-  "captura_top10": 0.503,
-  "nota": "Probado en 2022-2025. Donde ya hay fuego, sus alertas acertaron 30 % de las veces y cubrieron 75 % de los días con fuego. Para incendios nuevos sus alertas acertaron 14 % (la tasa base es 2.4 %), pero 81 % de los incendios nuevos empezó sin alerta: la mayoría de las igniciones son humanas."
+  "auc": 0.846,
+  "precision_media": 0.282,
+  "captura_top10": 0.52,
+  "nota": "Probado en 2022-2025. Donde ya hay fuego, sus alertas acertaron 31 % de las veces y cubrieron 79 % de los días con fuego. Para incendios nuevos sus alertas acertaron 15 % (la tasa base es 2.4 %), pero 82 % de los incendios nuevos empezó sin alerta: la mayoría de las igniciones son humanas."
 }
