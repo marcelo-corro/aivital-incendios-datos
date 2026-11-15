@@ -6,3 +6,4 @@ fecha,hora_utc,lat,lon,sensor,satelite,confianza,frp,tipo
 2019-10-16,1819,-52.6249,-71.4625,VIIRS,NOAA20,nominal,2.2,0
 2019-10-16,1819,-52.627,-71.4622,VIIRS,NOAA20,nominal,1.8,0
 2019-10-16,1910,-52.626,-71.4614,VIIRS,SNPP,nominal,4.7,0
+2026-03-06,2012,-52.5674,-71.6133,VIIRS,SNPP,nominal,2.7,0

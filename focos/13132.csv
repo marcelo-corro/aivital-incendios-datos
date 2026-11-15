@@ -16,3 +16,4 @@ fecha,hora_utc,lat,lon,sensor,satelite,confianza,frp,tipo
 2021-11-16,1929,-33.3641,-70.5829,VIIRS,SNPP,alta,13.0,0
 2021-11-16,1929,-33.3658,-70.5889,VIIRS,SNPP,nominal,12.7,0
 2021-11-16,1929,-33.3592,-70.5897,VIIRS,SNPP,nominal,13.0,0
+2026-01-09,1746,-33.3899,-70.5489,VIIRS,SNPP,nominal,3.2,0

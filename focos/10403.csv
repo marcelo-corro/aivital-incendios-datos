@@ -74,3 +74,4 @@ fecha,hora_utc,lat,lon,sensor,satelite,confianza,frp,tipo
 2024-05-11,1804,-41.9393,-72.7269,VIIRS,NOAA20,nominal,0.2,0
 2024-12-15,1412,-41.8872,-72.5786,MODIS,Terra,nominal,14.7,0
 2024-12-16,1755,-41.981,-72.7547,VIIRS,NOAA20,nominal,4.1,0
+2026-08-22,0533,-42.0181,-72.6885,VIIRS,NOAA20,nominal,4.0,0

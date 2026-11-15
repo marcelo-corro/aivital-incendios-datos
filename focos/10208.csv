@@ -350,3 +350,4 @@ fecha,hora_utc,lat,lon,sensor,satelite,confianza,frp,tipo
 2024-03-04,0546,-43.0486,-73.6989,VIIRS,NOAA20,nominal,0.4,0
 2024-03-04,1854,-43.1808,-73.7165,VIIRS,SNPP,nominal,18.8,0
 2025-04-05,1832,-42.8784,-73.6766,VIIRS,NOAA20,nominal,9.6,0
+2026-01-06,1901,-43.127,-73.6775,VIIRS,NOAA20,nominal,2.7,0

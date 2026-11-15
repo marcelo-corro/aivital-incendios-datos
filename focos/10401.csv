@@ -190,3 +190,5 @@ fecha,hora_utc,lat,lon,sensor,satelite,confianza,frp,tipo
 2024-10-31,1834,-42.9148,-72.2922,VIIRS,SNPP,nominal,4.2,0
 2024-12-27,1907,-42.667,-73.0756,VIIRS,SNPP,nominal,5.6,0
 2025-11-07,1903,-43.4829,-72.3448,VIIRS,SNPP,nominal,11.6,0
+2026-01-02,0558,-42.6624,-72.8291,VIIRS,SNPP,nominal,0.5,0
+2026-01-02,0558,-42.659,-72.8282,VIIRS,SNPP,nominal,0.5,0

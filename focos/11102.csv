@@ -418,3 +418,4 @@ fecha,hora_utc,lat,lon,sensor,satelite,confianza,frp,tipo
 2025-09-25,2003,-44.4966,-71.651,MODIS,Aqua,alta,39.0,0
 2025-09-25,2003,-44.4983,-71.6648,MODIS,Aqua,alta,48.9,0
 2025-09-25,2003,-44.4917,-71.6589,MODIS,Aqua,alta,22.6,0
+2026-10-27,2014,-44.485,-71.6583,VIIRS,SNPP,nominal,5.8,0
