@@ -1,13 +1,13 @@
-# aivital-incendios-datos
+# hackaton-nasa-2026-datos
 
 Datos publicados por el equipo **AIVital** para NASA Space Apps Challenge 2026, desafío
 [*Harmonization of MODIS and VIIRS Hot Spots*](https://www.spaceappschallenge.org/2026/challenges/modis-and-viirs-hot-spots/).
 
 Este repo **solo contiene archivos generados**: una serie armonizada de focos de calor MODIS y VIIRS por comuna de
-Chile, con su calendario mensual de actividad de quema. El código que los genera está en otro repo del equipo.
+Chile, con su calendario mensual de actividad de quema. El código que los genera está en [hackaton-nasa-2026-back](https://github.com/marcelo-corro/hackaton-nasa-2026-back).
 **No editar a mano:** se regeneran y publican desde el back.
 
-**URL base:** https://marcelo-corro.github.io/aivital-incendios-datos
+**URL base:** https://marcelo-corro.github.io/hackaton-nasa-2026-datos
 
 > **Estado actual: datos reales de las 345 comunas de Chile** (contrato v0.2, `"ejemplo": false`).
 > - **Serie armonizada** MODIS/VIIRS de noviembre de 2000 a diciembre de 2025, método
