@@ -9,26 +9,39 @@ Chile, con su calendario mensual de actividad de quema. El código que los gener
 
 **URL base:** https://marcelo-corro.github.io/hackaton-nasa-2026-datos
 
-> **Estado actual: datos reales de las 345 comunas de Chile** (contrato v0.2, `"ejemplo": false`).
+> **Estado actual: datos reales de las 345 comunas de Chile, actualizados todos los días** (contrato v0.8,
+> `"ejemplo": false`).
+> - **Actualización diaria** cerca de las 11:20 UTC (08:20 en Chile con horario de verano), con
+>   [GitHub Actions](.github/workflows/actualizar.yml). Si algo falla, queda en línea lo del día anterior.
+> - **Riesgo de focos por comuna** para mañana (24 h), mañana o pasado (48 h) y los próximos 7 días (orientativo).
+>   El modelo (`hgb_firms_clima_v3`) se probó en 2022-2025; sus métricas están en `metricas.json`.
+> - **Focos satelitales** (NASA FIRMS) hasta el día de la publicación; el clima (NASA POWER) llega con unos 4 días
+>   de rezago. La fecha de cada fuente está en `manifest.json → datos`.
 > - **Serie armonizada** MODIS/VIIRS de noviembre de 2000 a diciembre de 2025, método
 >   `factor_unico_snpp_2012-2017_v1`, en focos equivalentes MODIS.
-> - **Generada el 2026-11-14** (`generado_utc` en `manifest.json`).
-> - **El riesgo es para el 2026-01-01** (a 24 h): los datos llegan hasta el 31-12-2025, así que es el último día
->   que se puede pronosticar con ellos. No es un pronóstico en tiempo real.
-> - El modelo (`hgb_firms_v1`) se probó en 2022-2025; sus métricas están en `metricas.json`.
+> - **Piloto de sectores** en la Región de Valparaíso: dónde revisar primero dentro de cada comuna.
 
 ## Archivos
 
 | Ruta | Contenido |
 |---|---|
-| `/manifest.json` | Versión del contrato, fecha de generación, período y lista de comunas |
+| `/manifest.json` | Versión del contrato, fecha de generación, período, fecha de cada fuente y lista de comunas |
 | `/regiones.geojson` | Contornos simplificados de las comunas (WGS84) |
 | `/calendario/{region_id}.json` | Matriz mes × año: focos MODIS, VIIRS, serie armonizada con incertidumbre, mediana histórica, percentil y nivel |
 | `/riesgo/ultimo.json` | Riesgo de focos para mañana por comuna |
+| `/riesgo/48h.json`, `/riesgo/7d.json` | Riesgo a 48 h y a 7 días (este último, orientativo) |
+| `/comunas.json` | Clima del último día, motivos del nivel y recomendaciones de cada comuna |
+| `/avance/activos.json` | Incendios con focos en los últimos 3 días y su zona probable de avance |
 | `/focos/{region_id}.csv` | Focos de la comuna, para descargar |
+| `/sectores/{region_id}.geojson`, `/sectores/{region_id}_focos.csv` | Sectores de las comunas de la Región de Valparaíso: rasgos, probabilidad de fuego y focos |
+| `/alertas/{codigo_region}.json` | Comunas y sectores a revisar primero en la región (por ahora solo `05`, Valparaíso) |
+| `/recomendaciones.json` | Textos de las recomendaciones, con el documento oficial de cada una |
 | `/metricas.json` | Desempeño del modelo de riesgo |
+| `/index.html` | Página que presenta estos datos |
 
-`region_id` es el código único territorial de la comuna, como texto de 5 dígitos (`"05109"` = Viña del Mar).
+`region_id` es el código único territorial de la comuna, como texto de 5 dígitos (`"05109"` = Viña del Mar). El
+formato de cada archivo está en el
+[contrato](https://github.com/marcelo-corro/hackaton-nasa-2026-back/blob/main/contracts/README.md).
 
 ## Fuentes
 
@@ -94,9 +107,19 @@ condiciones (ver [Fuentes](#fuentes)).
 
 ## English
 
-Data files published by team AIVital (NASA Space Apps 2026) for the MODIS/VIIRS hotspot harmonization challenge:
-a harmonized monthly hotspot series and burning-activity calendar for each of Chile's communes. Generated
-files only; do not edit by hand. Base URL above. Currently **example data** (same structure, made-up numbers).
+Data files published by team AIVital for NASA Space Apps Challenge 2026, challenge *Harmonization of MODIS and VIIRS
+Hot Spots*. **Real data for Chile's 345 communes, updated every day** (around 11:20 UTC):
+
+- Next-day wildfire hotspot risk per commune (24 h and 48 h, plus an indicative 7-day outlook).
+- Active fires and their likely spread zone.
+- Recent weather, the facts behind each risk level, and recommendations for each commune.
+- A sector-level pilot for the Valparaíso Region.
+- A harmonized monthly MODIS/VIIRS hotspot series (November 2000 to December 2025) with its burning-activity
+  calendar.
+
+These are generated files only; do not edit them by hand. The base URL and file list are above, and each file's
+format is described in the
+[data contract](https://github.com/marcelo-corro/hackaton-nasa-2026-back/blob/main/contracts/README.md) (in Spanish).
 
 **Team** (alphabetical by last name): Marcelo Corro (software and data, technical coordination), José De Los Santos
 (interface and presentation), Katherine González (research), Sebastián Ríos (research) and David Serrudo (software
