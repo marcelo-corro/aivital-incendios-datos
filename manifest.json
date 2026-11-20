@@ -1,7 +1,7 @@
 {
   "contrato": "0.8",
   "ejemplo": false,
-  "generado_utc": "2026-11-15T12:13:16Z",
+  "generado_utc": "2026-11-20T14:43:20Z",
   "periodo": {
     "desde": "2000-11",
     "hasta": "2025-12"
@@ -410,24 +410,24 @@
     ],
     "modelo_b": {
       "modelo": "sectores_b_v1",
-      "fecha_prediccion": "2026-11-15",
+      "fecha_prediccion": "2026-11-21",
       "captura_top10_prueba": {
-        "modelo_b": 44.52,
+        "modelo_b": 45.08,
         "orden_a": 39.34,
         "azar": 10.0
       },
       "auc_incendio_grande_prueba": 0.866,
-      "auc_incendio_grande_ignicion_prueba": 0.83,
+      "auc_incendio_grande_ignicion_prueba": 0.832,
       "nota": "Prueba 2022-2025: el 10 % de sectores con mayor probabilidad de cada comuna concentró el 45 % del fuego (azar 10 %). Ordena mejor cuando ya hay fuego cerca; con fuego nuevo no supera al orden por historial. La probabilidad de incendio grande distingue bien (AUC 0.83 en fuegos nuevos)."
     }
   },
   "datos": {
-    "valido_para": "2026-11-15",
-    "ultimo_dato_focos": "2026-11-14",
+    "valido_para": "2026-11-21",
+    "ultimo_dato_focos": "2026-11-20",
     "ultimo_dato_suomi_npp": "2026-11-01",
     "sustitucion_noaa20": true,
-    "clima_hasta": "2026-11-11",
-    "clima_rezago_dias": 3,
+    "clima_hasta": "2026-11-16",
+    "clima_rezago_dias": 4,
     "prueba_nueva": {
       "desde": "2026-01-02",
       "hasta": "2026-11-01",
@@ -435,6 +435,6 @@
       "auc_climatologia": 0.8181,
       "precision_media": 0.3275
     },
-    "nota": "Focos satelitales hasta el 2026-11-14. Suomi NPP tiene datos solo hasta el 2026-11-01: los días siguientes usan NOAA-20 (mismo instrumento; en 2022-2025 el modelo rindió igual con él). El clima (NASA POWER) llega hasta el 2026-11-11: se usa ese último clima (con 3 días de rezago el modelo baja de AUC 0,85 a 0,82)."
+    "nota": "Focos satelitales hasta el 2026-11-20. Suomi NPP tiene datos solo hasta el 2026-11-01: los días siguientes usan NOAA-20 (mismo instrumento; en 2022-2025 el modelo rindió igual con él). El clima (NASA POWER) llega hasta el 2026-11-16: se usa ese último clima (con 3 días de rezago el modelo baja de AUC 0,85 a 0,82)."
   }
 }

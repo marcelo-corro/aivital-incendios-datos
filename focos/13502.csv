@@ -2065,3 +2065,4 @@ fecha,hora_utc,lat,lon,sensor,satelite,confianza,frp,tipo
 2026-10-21,1910,-34.018,-71.1423,VIIRS,NOAA20,nominal,3.4,0
 2026-10-24,1813,-34.0153,-71.1342,VIIRS,NOAA20,nominal,2.2,0
 2026-11-06,1910,-34.0274,-71.0739,VIIRS,NOAA20,nominal,3.1,0
+2026-11-17,1904,-34.0303,-71.0731,VIIRS,NOAA20,nominal,8.4,0
