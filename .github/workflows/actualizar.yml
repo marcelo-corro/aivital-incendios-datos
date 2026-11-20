@@ -6,7 +6,11 @@ name: Actualización diaria
 
 on:
   schedule:
-    - cron: "0 11 * * *"   # 11:00 UTC = 08:00 en Chile con horario de verano (07:00 con horario de invierno)
+    # GitHub atrasa o se salta corridas programadas cuando tiene mucha carga, sobre todo al inicio de cada hora: la
+    # del 20-11 a las 11:00 UTC no se lanzó. Por eso un minuto poco usado y una segunda corrida de respaldo, que solo
+    # trabaja si ese día no se publicó (si la primera se saltó o falló, por ejemplo porque FIRMS se demoró).
+    - cron: "17 11 * * *"  # principal: 08:17 en Chile con horario de verano (07:17 con horario de invierno)
+    - cron: "47 14 * * *"  # respaldo: 11:47 en Chile con horario de verano
   workflow_dispatch:
     inputs:
       publicar:
@@ -27,7 +31,37 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # Una corrida programada no hace nada si los datos de hoy (UTC) ya están publicados. A mano siempre corre.
+  decidir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      correr: ${{ steps.revisar.outputs.correr }}
+    steps:
+      - name: Manifest publicado
+        if: github.event_name == 'schedule'
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: manifest.json
+          sparse-checkout-cone-mode: false
+
+      - name: ¿Ya se publicó hoy?
+        id: revisar
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ]; then echo "correr=true" >> "$GITHUB_OUTPUT"; exit 0; fi
+          hoy=$(date -u +%F)
+          publicado=$(python3 -c "import json; print(json.load(open('manifest.json'))['generado_utc'][:10])" || echo "")
+          if [ "$publicado" = "$hoy" ]; then
+            echo "Los datos de hoy ya están publicados (generado_utc $publicado): esta corrida no hace nada."
+            echo "correr=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "Último publicado: ${publicado:-desconocido}; hoy es $hoy: corre la actualización."
+            echo "correr=true" >> "$GITHUB_OUTPUT"
+          fi
+
   actualizar:
+    needs: decidir
+    if: needs.decidir.outputs.correr == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 300
     env:
