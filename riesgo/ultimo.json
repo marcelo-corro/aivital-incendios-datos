@@ -1,7 +1,7 @@
 {
   "contrato": "0.8",
   "ejemplo": false,
-  "calculado_utc": "2026-11-20T14:43:25Z",
+  "calculado_utc": "2026-11-21T11:27:47Z",
   "valido_para": "2026-11-21",
   "horizonte_horas": 24,
   "modelo": "hgb_firms_clima_v3",
@@ -752,9 +752,9 @@
     },
     {
       "region_id": "07301",
-      "prob_foco": 0.056,
-      "percentil": 34.8,
-      "nivel": "medio"
+      "prob_foco": 0.166,
+      "percentil": 97.0,
+      "nivel": "alto"
     },
     {
       "region_id": "07302",
@@ -878,9 +878,9 @@
     },
     {
       "region_id": "08105",
-      "prob_foco": 0.006,
-      "percentil": 3.2,
-      "nivel": "bajo"
+      "prob_foco": 0.154,
+      "percentil": 100.0,
+      "nivel": "alto"
     },
     {
       "region_id": "08106",
@@ -1184,9 +1184,9 @@
     },
     {
       "region_id": "09202",
-      "prob_foco": 0.026,
-      "percentil": 1.0,
-      "nivel": "bajo"
+      "prob_foco": 0.161,
+      "percentil": 49.0,
+      "nivel": "alto"
     },
     {
       "region_id": "09203",
